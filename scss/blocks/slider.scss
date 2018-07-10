@@ -1,0 +1,18 @@
+.slider {
+
+}
+
+.slider__slide {
+	display: none;
+}
+
+@for $i from 1 through $slides-quantity {
+ 	// --#{$i} {
+ 	// 	transform: translateX(($i - 1) * 100%);
+ 	// }
+
+ 	.slider__input--#{$i}:checked ~ .slider__list .slider__slide--#{$i} {
+ 		display: block;
+ 	}
+}
+
