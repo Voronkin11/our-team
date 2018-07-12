@@ -1,0 +1,135 @@
+.card {
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			width: 1px;
+			height: 100%;
+			background-image: url(../img/line.svg);
+			z-index: 1;
+		}
+}
+
+.wrap-card {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	padding: 76px 0 68px;
+	width: 50%;
+}
+
+.card__image {overflow: hidden;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	width: 418px;
+	height: 418px;
+	background-image: url('../img/image-border.svg');
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+		@include border;
+	}
+}
+
+.card__text {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 418px;
+}
+
+.card__title {
+	margin: 0;
+	font-family: $font-family--title;
+	font-size: $font-size--h3;
+	font-weight: $font-weight--title;
+	line-height: $line-height--title;
+	letter-spacing: 0.02em;
+	color: $gray;
+
+		&::after {
+			content: '';
+			display: block;
+			margin: 30px auto 30px;
+			width: 100px;
+			height: 1px;
+			background-image: url(../img/seperator-line.svg);
+		}
+}
+
+.card__subtitle {
+	margin: 0 0 30px 0;
+	font-family: $font-family;
+	font-size: $font-size--h4;
+	font-weight: $font-weight--h4;
+	line-height: $line-height--h4;
+	color: $gray;
+}
+
+.socials {
+	display: flex;
+	margin: 0 0 30px 0;
+	font-size: 0;
+}
+
+.socials__link {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0	2.5px;
+	border: 2px solid #cccccc;
+	border-radius: 50%;
+
+		&:hover {
+			border-color: $color-main;
+		}
+		
+		&--fb {
+			background-image: url(../img/facebook_icon.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&--tw {
+			background-image: url(../img/twitter_icon.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&--gg {
+			background-image: url(../img/google_plus_icon.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&--lkin {
+			background-image: url(../img/linkedin_icon.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+}
+
+.card__description {
+	display: block;
+	margin: 0 0 30px 0;
+	color: $gray--dark;
+		&::after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 4px;
+			margin: 20px auto 0;
+			background-image: url(../img/seperator-line-2.svg);
+		}
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="4" viewBox="0 0 50 4">
+ <defs>
+    <style>
+      .seper-line {
+        fill: #fc0;
+        stroke: #fc0;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <rect class="seper-line" x="0" y="0" width="10" height="4"/>
+  <rect class="seper-line" x="15" y="0" width="20" height="4"/>
+  <rect class="seper-line" x="40" y="0" width="10" height="4"/>
+</svg>

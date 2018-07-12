@@ -6,6 +6,9 @@
 	color: $gray;
 
 	&--yellow {
+		width: 120px;
+		height: 24px;
+		text-transform: uppercase;
 		@include border();
 		
 		&:hover {

@@ -1,0 +1,56 @@
+.slider__input {
+	display: none;
+}
+
+.slider__controls {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.slider__control {
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 0 4.5px;
+	background-image: url(../img/slider__controls.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/*
+.slider__input--1:checked ~ .slider__controls .slider__control--1,
+.slider__input--2:checked ~ .slider__controls .slider__control--2,
+.slider__input--3:checked ~ .slider__controls .slider__control--3 {
+	background-image: url(../../img/slider__controls--active.svg);
+}
+*/
+@for $i from 1 through $slides-quantity {
+ 	.slider__input--#{$i}:checked ~ .slider__controls .slider__control--#{$i} {
+ 		background-image: url(../img/slider__controls--active.svg);
+ 	}
+}
+
+.slider__arrow {
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	margin-top: -11.5px;
+	width: 13px;
+	height: 23px;
+	background: none;
+	border: none;
+	font-size: 0;
+	z-index: 2;
+
+	&--left {
+		background-image: url(../img/angle_left_icon.png);
+	}
+
+	&--right {
+		right: 0;
+		background-image: url(../img/angle_right_icon.png);
+	}
+}

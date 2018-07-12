@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" >
+<defs>
+    <style>
+      .line {
+        fill: #fc0;
+      }
+    </style>
+  </defs>
+  <rect class="line" width="100%" height="100%"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="418" height="418" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<style>
+			.image-border {
+				height: 100%;
+				width: 100%;
+				fill: none;
+				stroke: #ffcc00;
+				stroke-dasharray: 50%;
+				stroke-dashoffset: 25%;
+			}
+		</style>
+	</defs>
+	<rect class="image-border" />
+</svg>

@@ -1,5 +1,5 @@
 .slider {
-
+	position: relative;
 }
 
 .slider__slide {
@@ -12,7 +12,6 @@
  	// }
 
  	.slider__input--#{$i}:checked ~ .slider__list .slider__slide--#{$i} {
- 		display: block;
+ 		display: flex;
  	}
 }
-
